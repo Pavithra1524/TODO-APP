@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 400px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#addBtn {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#addBtn:hover {
+  background-color: #45a049;
+}
+
+ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+li {
+  background: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: #888;
+  background: #e0e0e0;
+}
+
+.remove-btn {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background: #e60000;
+}
+/* Enhanced background for body */
+body {
+    background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+}
+
+/* Add a subtle border and shadow to container */
+.container {
+    border: 2px solid #66a6ff;
+    box-shadow: 0 8px 24px rgba(102,166,255,0.15), 0 1.5px 4px rgba(0,0,0,0.08);
+    transition: box-shadow 0.3s;
+}
+
+.container:hover {
+    box-shadow: 0 12px 32px rgba(102,166,255,0.25), 0 2px 8px rgba(0,0,0,0.12);
+}
+
+/* Stylish header */
+h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #4a90e2;
+    text-shadow: 0 2px 8px rgba(102,166,255,0.12);
+}
+
+/* Input group with shadow */
+.input-group {
+    box-shadow: 0 2px 8px rgba(102,166,255,0.08);
+    border-radius: 8px;
+    padding: 8px;
+    background: #f6fbff;
+}
+
+/* Input field focus effect */
+input[type="text"]:focus {
+    border-color: #4a90e2;
+    outline: none;
+    box-shadow: 0 0 4px #4a90e2;
+}
+
+/* Add button with gradient and shadow */
+#addBtn {
+    background: linear-gradient(90deg, #4a90e2 0%, #66a6ff 100%);
+    box-shadow: 0 2px 8px rgba(102,166,255,0.15);
+    font-weight: 600;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+#addBtn:hover {
+    background: linear-gradient(90deg, #357ab7 0%, #4a90e2 100%);
+    box-shadow: 0 4px 16px rgba(102,166,255,0.25);
+}
+
+/* List styling */
+ul {
+    margin-top: 24px;
+    padding: 0 4px;
+}
+
+/* List item with icon and animation */
+li {
+    background: #f6fbff;
+    border: 1.5px solid #cce6ff;
+    box-shadow: 0 1px 4px rgba(102,166,255,0.08);
+    position: relative;
+    transition: background 0.2s, box-shadow 0.2s;
+    font-size: 1.1rem;
+}
+
+li::before {
+    content: "📝";
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #888;
+    background: #e0e7ef;
+    border-color: #b3c6e6;
+    opacity: 0.7;
+}
+
+li:hover {
+    background: #e6f2ff;
+    box-shadow: 0 2px 8px rgba(102,166,255,0.12);
+}
+
+/* Remove button with icon */
+.remove-btn {
+    background: linear-gradient(90deg, #ff4d4d 0%, #ff8a8a 100%);
+    font-weight: 600;
+    box-shadow: 0 1px 4px rgba(255,77,77,0.12);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.remove-btn::before {
+    content: "🗑️";
+    font-size: 1rem;
+}
+
+.remove-btn:hover {
+    background: linear-gradient(90deg, #e60000 0%, #ff4d4d 100%);
+    box-shadow: 0 2px 8px rgba(255,77,77,0.18);
+}
+
+/* Add smooth transitions */
+* {
+    transition: background 0.2s, box-shadow 0.2s, border-color 0.2s, color 0.2s;
+}
+
+/* Edit button styling */
+.edit-btn {
+    background: linear-gradient(90deg, #ffd700 0%, #fffacd 100%);
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-right: 8px;
+    box-shadow: 0 1px 4px rgba(255,215,0,0.12);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.edit-btn::before {
+    content: "✏️";
+    font-size: 1rem;
+}
+
+.edit-btn:hover {
+    background: linear-gradient(90deg, #ffc107 0%, #ffe082 100%);
+    box-shadow: 0 2px 8px rgba(255,215,0,0.18);
+}
